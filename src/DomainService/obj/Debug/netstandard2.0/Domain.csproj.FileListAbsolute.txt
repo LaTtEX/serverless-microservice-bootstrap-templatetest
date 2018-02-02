@@ -1,8 +1,0 @@
-c:\Users\jon.limjap\source\repos\PageUp\serverless-microservice-bootsrap-mock\src\DomainService\bin\Debug\netstandard2.0\Domain.deps.json
-c:\Users\jon.limjap\source\repos\PageUp\serverless-microservice-bootsrap-mock\src\DomainService\bin\Debug\netstandard2.0\Domain.dll
-c:\Users\jon.limjap\source\repos\PageUp\serverless-microservice-bootsrap-mock\src\DomainService\bin\Debug\netstandard2.0\Domain.pdb
-c:\Users\jon.limjap\source\repos\PageUp\serverless-microservice-bootsrap-mock\src\DomainService\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
-c:\Users\jon.limjap\source\repos\PageUp\serverless-microservice-bootsrap-mock\src\DomainService\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
-c:\Users\jon.limjap\source\repos\PageUp\serverless-microservice-bootsrap-mock\src\DomainService\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
-c:\Users\jon.limjap\source\repos\PageUp\serverless-microservice-bootsrap-mock\src\DomainService\obj\Debug\netstandard2.0\Domain.dll
-c:\Users\jon.limjap\source\repos\PageUp\serverless-microservice-bootsrap-mock\src\DomainService\obj\Debug\netstandard2.0\Domain.pdb
