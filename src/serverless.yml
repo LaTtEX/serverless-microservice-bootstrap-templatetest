@@ -17,13 +17,13 @@ functions:
   toupper:
     handler: Handlers::Handlers.Handler::ToUpper
 
-#  hello:
-#    handler: Handlers::Handlers.Handler::Hello
+  hello:
+    handler: Handlers::Handlers.Handler::Hello
 
-#  healthcheck:
-#    handler: Handlers::Handlers.Handler::HealthCheck
-#    events:
-#      - http:
-#          path: healthcheck
-#          method: get
-#          cors: true  
+  healthcheck:
+    handler: Handlers::Handlers.Handler::HealthCheck
+    events:
+      - http:
+          path: healthcheck
+          method: get
+          cors: true  

@@ -16,20 +16,17 @@ namespace Handlers
             return builder.Build();
         }
 
-        [LambdaSerializer(typeof(System.String))]
         public string ToUpper(string input, ILambdaContext context)
         {
             return input?.ToUpper();
         }
 
-        [LambdaSerializer(typeof(Request))]
         public Response Hello(Request request, ILambdaContext context)
         {
             var serviceProcess = GetContainer(context).Resolve<IDomainService>();
             return serviceProcess.Process(request);
         }
 
-        [LambdaSerializer(typeof(APIGatewayProxyRequest))]
         public APIGatewayProxyResponse HealthCheck(APIGatewayProxyRequest request, ILambdaContext context)
         {
             var logger = GetContainer(context).Resolve<ILogger<Handler>>();
