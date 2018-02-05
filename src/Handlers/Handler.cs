@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Amazon.Lambda.APIGatewayEvents;
 using Amazon.Lambda.Core;
+using Amazon.Lambda.Serialization.Json;
 using Autofac;
 using Domain;
 using Microsoft.Extensions.Logging;
@@ -16,17 +17,14 @@ namespace Handlers
             return builder.Build();
         }
 
-        public string ToUpper(string input, ILambdaContext context)
-        {
-            return input?.ToUpper();
-        }
-
+        [LambdaSerializer(typeof(JsonSerializer))]
         public Response Hello(Request request, ILambdaContext context)
         {
             var serviceProcess = GetContainer(context).Resolve<IDomainService>();
             return serviceProcess.Process(request);
         }
 
+        [LambdaSerializer(typeof(JsonSerializer))]
         public APIGatewayProxyResponse HealthCheck(APIGatewayProxyRequest request, ILambdaContext context)
         {
             var logger = GetContainer(context).Resolve<ILogger<Handler>>();

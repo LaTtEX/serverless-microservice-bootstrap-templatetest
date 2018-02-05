@@ -9,17 +9,6 @@ namespace Tests
     public class HandlerTests
     {
         [Fact]
-        public void TestToUpperFunction()
-        {
-            // Invoke the lambda function and confirm the string was upper cased.
-            var handler = new Handler();
-            var context = new TestLambdaContext();
-            var upperCase = handler.ToUpper("hello world", context);
-
-            Assert.Equal("HELLO WORLD", upperCase);
-        }
-    
-        [Fact]
         public void TestHealthCheck()
         {
             var handler = new Handler();

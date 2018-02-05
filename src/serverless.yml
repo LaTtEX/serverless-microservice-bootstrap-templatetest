@@ -14,9 +14,6 @@ package:
   artifact: Handlers/bin/release/netcoreapp2.0/publish/deploy-package.zip
 
 functions:
-  toupper:
-    handler: Handlers::Handlers.Handler::ToUpper
-
   hello:
     handler: Handlers::Handlers.Handler::Hello
 
