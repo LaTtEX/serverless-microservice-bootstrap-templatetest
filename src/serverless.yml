@@ -1,0 +1,29 @@
+service: serverless-microservice-bootstrap
+
+provider:
+  name: aws
+  runtime: dotnetcore2.0
+
+# you can overwrite defaults here
+  stage: v1
+  region: ap-southeast-2
+  deploymentBucket: serverless-microservice-bootstrap.${self:provider.region}.deploys
+
+# you can add packaging information here
+package:
+  artifact: Handlers/bin/release/netcoreapp2.0/publish/deploy-package.zip
+
+functions:
+  toupper:
+    handler: Handlers::Handlers.Handler::ToUpper
+
+#  hello:
+#    handler: Handlers::Handlers.Handler::Hello
+
+#  healthcheck:
+#    handler: Handlers::Handlers.Handler::HealthCheck
+#    events:
+#      - http:
+#          path: healthcheck
+#          method: get
+#          cors: true  
